@@ -24,7 +24,7 @@ export default function NavBar(props) {
                 <div className="mt-12 sm:flex menu">
                     {menu.getMenu().map((el)=> <ul className="self-end pb-1" key={el.id + 'menu'}>
                         <li className="relative mx-2"><Link className = "font-serif text-xl" href = {el.alias}>{el.name}</Link>
-                            <ul className="m-auto sm:w-[335px] sm:ml-[-280px] bg-white px-4 rounded child">{el.child.map((c)=><li className="py-1" key={c.id + 'child'}><Link href = {c.alias}>{c.name}</Link></li>)}</ul>
+                            <ul className="m-auto  bg-white px-4 rounded child">{el.child.map((c)=><li className="py-1" key={c.id + 'child'}><Link href = {c.alias}>{c.name}</Link></li>)}</ul>
                         </li>
                     </ul>)}
                 </div>
