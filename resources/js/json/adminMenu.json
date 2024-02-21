@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Главная",
+        "link": "dashboard"
+    },
+    {
+        "name": "Меню",
+        "link": "menu"
+    }
+]

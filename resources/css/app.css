@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    background-color: #f7f3f1;
+}
+
+.menu ul li a {
+    display: block;
+}
+
+.menu ul li {
+    color: #407590;
+}
+
+.menu ul li:hover {
+    color: rgb(235, 113, 35);
+}
+
+.child {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+}
+
+.menu ul li:hover > .child {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+
+}
+
+@media (max-width: 1280px) {
+    .child {
+        position: absolute;
+    }
+
+    .menu ul li:hover > .child {
+        visibility: visible;
+        opacity: 1;
+        transition: 1s;
+        position: relative;
+    }
+
+    .menu{
+        margin-left: -20px;
+    }
+
+}
